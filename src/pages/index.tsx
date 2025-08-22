@@ -1,7 +1,7 @@
-import LandPage from "./landingPage";
+import LandingPage from "./tempPage";
 
 export default function HomePage() {
   return (
-    <LandPage></LandPage>
+    <LandingPage></LandingPage>
   );
 }
