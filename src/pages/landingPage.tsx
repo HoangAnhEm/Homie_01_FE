@@ -1,4 +1,4 @@
-import { BrandName } from '../constants/index';
+import { BrandName } from '../constants/common';
 import { useRouter } from 'next/router';
 
 export default function LandingPage() {

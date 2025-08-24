@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Photo } from '~/types/photo';
+import type { Photo } from '~/types/Photo';
 
 type PhotoCardProps = {
   photo: Photo;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPhotos } from '../services/photoService';
 import PhotoCard from '../components/PhotoCard';
-import type { Photo } from '~/types/photo';
+import type { Photo } from '~/types/Photo';
 
 export default function DemoPage() {
   const [photos, setPhotos] = useState<Photo[]>([]);
