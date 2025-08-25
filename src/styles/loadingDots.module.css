@@ -1,0 +1,57 @@
+/* LoadingDots CSS */
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    background: black;
+    opacity: 0.2;
+    transform: scale(1);
+}
+
+.animate-dot {
+    animation: dotFade 1.2s infinite;
+}
+
+.delay-1 {
+    animation-delay: 0.25s;
+}
+
+.delay-2 {
+    animation-delay: 0.5s;
+}
+
+.delay-3 {
+    animation-delay: 0.75s;
+}
+
+.delay-4 {
+    animation-delay: 1s;
+}
+
+@keyframes dotFade {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+        background: black;
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1.1);
+        background: black;
+    }
+
+    40% {
+        opacity: 0.2;
+        transform: scale(1);
+        background: white;
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+        background: white;
+    }
+}

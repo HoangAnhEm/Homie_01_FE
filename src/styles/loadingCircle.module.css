@@ -1,0 +1,23 @@
+/* LoadingCircle CSS */
+
+.loader {
+    border: 4px solid #3498db;
+    /* viền trong liền màu */
+    border-radius: 50%;
+    /* viền tròn mềm mại */
+    width: 80px;
+    height: 80px;
+    border-top-color: transparent;
+    /* phần trên trong suốt để tạo xoay */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
