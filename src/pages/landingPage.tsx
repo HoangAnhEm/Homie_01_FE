@@ -43,12 +43,15 @@ export default function LandingPage() {
 
       {/* Background ảnh + nội dung chính */}
       <div className="relative w-full flex-1 flex flex-col justify-center items-center bg-black/50">
-        {/* Ảnh nền */}
+        {/* Vid nền */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/bg.png"
-            alt="Banner Photo"
+          <video
+            src="/bg.mp4"
             className="w-full h-full object-cover opacity-80"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
           {/* Overlay mờ */}
           <div className="absolute inset-0 bg-black opacity-20"></div>

@@ -57,6 +57,7 @@ export default function LoginPage() {
     setTimeout(() => {
       setLoading(false);
       alert("Đăng nhập thành công!\n" + JSON.stringify({ email, password }, null, 2));
+      router.push('/workspace/WorkspacesPage');
     }, 2000);
   }
 

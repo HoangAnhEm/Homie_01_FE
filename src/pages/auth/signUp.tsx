@@ -60,6 +60,7 @@ export default function SignUpPage() {
     setTimeout(() => {
       setLoading(false);
       alert("Đăng ký thành công!\n" + JSON.stringify({ email, password, confirmPassword }, null, 2));
+      router.push('/workspace/WorkspacesPage');
     }, 2000);
   }
 
