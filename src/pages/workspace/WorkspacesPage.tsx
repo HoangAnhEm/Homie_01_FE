@@ -4,59 +4,60 @@ import type { Workspace } from "~/types/Workspace";
 const workspaces = [
     {
         id: 1,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws1.jpg",
-        files: 4,
+        title: "Phân tích Dữ liệu Tháng 8",
+        date: "Ngày 08/08/2025",
+        desc: "Dự án phân tích dữ liệu khách hàng sử dụng Python, báo cáo kết quả tăng trưởng quý vừa qua.",
+        image: "https://picsum.photos/id/101/300/200",
+        files: 7,
     },
     {
         id: 2,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws2.jpg",
-        files: 4,
+        title: "Thiết kế Website Bán hàng",
+        date: "Ngày 15/08/2025",
+        desc: "Thiết kế UI/UX cho sàn thương mại điện tử cùng team, hoàn thiện prototype và giao diện desktop/mobile.",
+        image: "https://picsum.photos/id/102/300/200",
+        files: 12,
     },
     {
         id: 3,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws3.jpg",
-        files: 4,
+        title: "Khảo sát thị trường miền Bắc",
+        date: "Ngày 20/06/2025",
+        desc: "Tổng hợp dữ liệu khảo sát khách hàng mới, thống kê độ tuổi, sở thích và hành vi mua sắm.",
+        image: "https://picsum.photos/id/103/300/200",
+        files: 18,
     },
     {
         id: 4,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws4.jpg",
-        files: 4,
+        title: "Đào tạo nhân sự mới",
+        date: "Ngày 04/09/2025",
+        desc: "Tài liệu onboarding cho nhân viên mới, checklist các kỹ năng & hoạt động cần hoàn thành.",
+        image: "https://picsum.photos/id/104/300/200",
+        files: 9,
     },
     {
         id: 5,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws5.jpg",
-        files: 4,
+        title: "Báo cáo tài chính",
+        date: "Ngày 01/07/2025",
+        desc: "Tổng hợp báo cáo thu chi và đánh giá kết quả kinh doanh nửa đầu năm cho phòng kế toán.",
+        image: "https://picsum.photos/id/106/300/200",
+        files: 5,
     },
     {
         id: 6,
-        title: "Title",
-        date: "Ngày 44/4/4444",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-        image: "/images/ws6.jpg",
-        files: 4,
+        title: "Lập kế hoạch marketing Q4",
+        date: "Ngày 12/09/2025",
+        desc: "Thảo luận ý tưởng, phân tích đối thủ cạnh tranh và lên kế hoạch cho chiến dịch marketing quý IV.",
+        image: "https://picsum.photos/id/106/300/200",
+        files: 15,
     },
 ];
+
 
 export default function WorkspacesPage() {
     const [tab, setTab] = useState("public");
 
     return (
-        <div className="min-h-screen relative overflow-hidden">
+        <div className="min-h-screen p-2 relative overflow-hidden">
             {/* Background image */}
             <img
                 src="/main_bg.png"
@@ -66,7 +67,7 @@ export default function WorkspacesPage() {
 
             {/* Header */}
             <div className="flex items-center gap-1 mb-6">
-                <img src="/logo.png" alt="Logo" className="w-20 h-20" />
+                <img src="/logo.png" alt="Logo" className="w-10 h-10" />
                 <span className="text-white font-medium text-2xl">Không gian làm việc</span>
             </div>
 
@@ -142,7 +143,7 @@ function WorkspaceCard({ workspace }: { workspace: Workspace }) {
             <div className="absolute inset-0 bg-black/40" />
             <div className="relative z-10 p-4 flex flex-col h-full justify-between">
                 <div className="flex justify-between items-center mb-2">
-                    <span className="text-xs text-white">{workspace.date}</span>
+                    <span className="text-xs text-white font-medium">{workspace.date}</span>
                     <span className="text-white flex items-center gap-1 text-xs">
                         <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
                             <path d="M2 2h12v12H2z" stroke="currentColor" strokeWidth="1.5" />
@@ -152,10 +153,9 @@ function WorkspaceCard({ workspace }: { workspace: Workspace }) {
                 </div>
                 <div>
                     <div className="flex items-center gap-2 mb-1">
-                        <img src="/logo.png" alt="icon" className="w-5 h-5" />
-                        <span className="text-white font-bold text-base">{workspace.title}</span>
-                    </div>
-                    <div className="text-white text-xs line-clamp-2">{workspace.desc}</div>
+                        <img src="/logo.png" alt="icon" className="w-10 h-10" />
+                        <span className="text-white font-bold text-lg truncate">{workspace.title}</span>                    </div>
+                    <div className="text-white text-xs font-medium line-clamp-2">{workspace.desc}</div>
                 </div>
             </div>
         </div>

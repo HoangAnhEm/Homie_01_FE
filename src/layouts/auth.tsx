@@ -8,7 +8,7 @@ export default function AuthenLayout({ children }: { children: ReactNode }) {
         <div className="h-screen flex items-center justify-center relative">
             {/* Logo và BrandName góc trên bên trái */}
             <div className="absolute top-6 left-8 flex items-center gap-2 z-50">
-                <img src="/logo.png" alt="Logo BrandName" className="w-12 h-12 object-contain" />
+                <img src="/logo.png" alt="Logo BrandName" className="w-10 h-10 object-contain" />
                 <span className="font-bold text-xl text-black drop-shadow">{BrandName}</span>
             </div>
             {/* Cột trái: Testimonial */}

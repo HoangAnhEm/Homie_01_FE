@@ -20,7 +20,7 @@ export default function LandingPage() {
       <div className="flex justify-between items-center px-12 py-6 absolute left-0 top-0 w-full z-10">
         <div className="flex items-center gap-2">
           {/* Logo (dùng emoji tạm, thay bằng Image nếu bạn có asset) */}
-          <img src="/logo.png" alt="Logo BrandName" className="w-15 h-15 object-contain" />
+          <img src="/logo.png" alt="Logo BrandName" className="w-10 h-10 object-contain" />
           <span className="font-bold text-xl text-white drop-shadow">{BrandName}</span>
         </div>
         <div className="flex gap-6 font-bold text-white drop-shadow">
